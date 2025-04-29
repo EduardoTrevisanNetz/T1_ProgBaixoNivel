@@ -88,9 +88,9 @@ void sepia(Pixel* img, int total) {
         int g = img[i].g;
         int b = img[i].b;
 
-        int novaR = fmin(255, r * 1.1 + 10);
-        int novaG = fmin(255, g * 1.1 + 10);
-        int novaB = fmax(0, b * 0.9 - 10);
+        int novaR = fmin(255, r * 1.5 + 10);
+        int novaG = fmin(255, g * 1.5 + 10);
+        int novaB = fmax(0, b * 0.6 - 10);
 
         img[i].r = novaR;
         img[i].g = novaG;
